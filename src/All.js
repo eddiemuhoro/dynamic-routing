@@ -14,7 +14,7 @@ const All = () => {
 
 	useEffect(() => {
 		async function fetchData() {
-			const res = await axios("http://localhost:3001/comments");
+			const res = await axios("/comments");
 			console.log("RES", res.data);
 			setUsers(res.data);
 		}

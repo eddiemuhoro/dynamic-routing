@@ -11,7 +11,7 @@ const User = (props) => {
 	useEffect(() => {
 		async function fetchData() {
 			const res = await axios(
-				`http://localhost:3001/comments/${params.id}`
+				`/comments/${params.id}`
 			);
 			console.log("INDI", res.data);
 			setUsers(res.data);
